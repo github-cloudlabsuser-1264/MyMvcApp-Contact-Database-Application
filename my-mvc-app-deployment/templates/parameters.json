@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Azure App Service for the MyMvcApp."
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "East US",
+      "metadata": {
+        "description": "The location where the resources will be deployed."
+      }
+    },
+    "sqlServerName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the SQL Server."
+      }
+    },
+    "sqlDatabaseName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the SQL Database."
+      }
+    },
+    "adminUsername": {
+      "type": "string",
+      "metadata": {
+        "description": "The administrator username for the SQL Database."
+      }
+    },
+    "adminPassword": {
+      "type": "securestring",
+      "metadata": {
+        "description": "The administrator password for the SQL Database."
+      }
+    }
+  }
+}
